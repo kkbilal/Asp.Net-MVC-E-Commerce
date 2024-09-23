@@ -1,0 +1,52 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+
+@model List<Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<table id="tbl6" class="table table-bordered" style="margin-top:20px;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Category Name</th>
+            <th>Delete & Update</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.CategoryID
+                </td>
+                <td>
+                    @item.CategoryName
+                </td>
+                <td>
+                    <a href="/Category/DeleteCategory/@item.CategoryID" class="btn btn-danger">Delete</a>
+                    <a href="/Category/GetCategory/@item.CategoryID" class="btn btn-primary">Update</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a class="btn btn-primary" href="/Category/AddCategory">New Category</a>
+
+<link href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<!-- DataTables JS ve jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+
+
+<script>
+
+    $('#tbl6').dataTable({});
+
+</script>

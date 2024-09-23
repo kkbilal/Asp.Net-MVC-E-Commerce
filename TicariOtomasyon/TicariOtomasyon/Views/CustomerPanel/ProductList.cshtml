@@ -1,0 +1,32 @@
+﻿@model List<TicariOtomasyon.Models.Siniflar.Product>
+@{
+    ViewBag.Title = "ProductList";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+
+
+<div class="container">
+    <h2>Products</h2>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="@item.ProductImage" class="card-img-top" alt="@item.ProductName" style="height:200px;width:auto;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProductName</h5>
+                        <p class="card-text">Brand: @item.ProductBrand</p>
+                        <p class="card-text">Price: @item.ProductPrice $</p>
+                        <form action="/CustomerPanel/AddToCart" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductID" />
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+

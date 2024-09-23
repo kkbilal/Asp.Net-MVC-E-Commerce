@@ -1,0 +1,51 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model List<Departman>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<table id="tbl4" class="table table-bordered" style="margin-top:20px;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Department Name</th>
+            <th> Delete &amp; Update  &amp; Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.DepartmanID
+                </td>
+                <td>
+                    @item.DepartmanName
+                </td>
+
+                <td>
+                    <a href="/Departman/DeleteDepartman/@item.DepartmanID" class="btn btn-danger">Delete</a>
+                    <a href="/Departman/GetDepartman/@item.DepartmanID" class="btn btn-primary">Update</a>
+                    <a href="/Departman/DetailsDepartman/@item.DepartmanID" class="btn btn-light" style="background-color:wheat">Details</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a class="btn btn-primary" href="/Departman/NewDepartman">New Department</a>
+<link href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<!-- DataTables JS ve jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+
+
+<script>
+
+    $('#tbl4').dataTable({});
+
+</script>

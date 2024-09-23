@@ -1,0 +1,26 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model List<Sale>
+@{
+    ViewBag.Title = "Orders";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+<br />
+<h2>Order History</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Date</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Product.ProductName</td>
+            <td>@item.Product.ProductPrice $</td>
+            <td>@item.SaleDate</td>
+        </tr>
+    }
+
+</table>

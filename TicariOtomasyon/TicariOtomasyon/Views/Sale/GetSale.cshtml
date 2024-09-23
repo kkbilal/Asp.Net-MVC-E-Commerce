@@ -1,0 +1,32 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Sale
+@{
+    ViewBag.Title = "GetSale";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("UpdateSale", "Sale", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.SaleID)
+    @Html.LabelFor(x => x.Product)
+    @Html.DropDownListFor(x => x.ProductID, (List<SelectListItem>)ViewBag.productlist, new { @class = "form-control" })
+    <br />
+    @Html.Label("Customer")
+    @Html.DropDownListFor(x => x.CustomerID, (List<SelectListItem>)ViewBag.customerlist, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Employee)
+    @Html.DropDownListFor(x => x.EmployeeID, (List<SelectListItem>)ViewBag.employeelist, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.SalePrice)
+    @Html.TextBoxFor(x => x.SalePrice, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.SaleNumber)
+    @Html.TextBoxFor(x => x.SaleNumber, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.SaleCost)
+    @Html.TextBoxFor(x => x.SaleCost, new { @class = "form-control" })
+    <br />
+  
+    <button class="btn btn-primary">Save</button>
+
+}
+

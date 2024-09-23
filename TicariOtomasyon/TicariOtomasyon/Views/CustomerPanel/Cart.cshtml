@@ -1,0 +1,42 @@
+﻿@model List<TicariOtomasyon.Models.Siniflar.Product>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+
+<div class="container">
+    <h2>Your Cart</h2>
+
+    <form action="/CustomerPanel/ClearCart" method="post">
+        <button type="submit" class="btn btn-danger">Clear Cart</button>
+    </form>
+
+    <form action="/CustomerPanel/UpdateCart" method="post">
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <img src="@item.ProductImage" class="card-img-top" alt="@item.ProductName" style="height:150px;width:300px;" />
+                        <div class="card-body">
+                            <h5 class="card-title">@item.ProductName</h5>
+                            <p class="card-text">Brand: @item.ProductBrand</p>
+                            <p class="card-text">Price: @item.ProductPrice $</p>
+                            <input type="hidden" name="productIds" value="@item.ProductID" />
+                            <input type="number" name="quantities[@item.ProductID]" value="1" min="1" class="form-control" style="width:100px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <button type="submit" class="btn btn-primary mt-3">Update Cart</button>
+    
+    </form>
+
+    <h3>Total: @ViewBag.TotalPrice $</h3>
+
+    <form action="/CustomerPanel/Payment" method="post">
+        <button type="submit" class="btn btn-success">Proceed to Payment</button>
+    </form>
+</div>

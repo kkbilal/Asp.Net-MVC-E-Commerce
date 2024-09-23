@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "PaymentConfirmation";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<div class="container">
+    <h2>Ödeme Başarılı!</h2>
+    <p>Toplam ödediğiniz tutar: @Session["TotalPrice"] $</p>
+    <p>Teşekkür ederiz! Siparişiniz alınmıştır.</p>
+
+    <a href="/CustomerPanel/ProductList" class="btn btn-primary">Alışverişe Devam Et</a>
+</div>

@@ -1,0 +1,29 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Employee
+@{
+    ViewBag.Title = "NewEmployee";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<br />
+<h2>New Employee Page</h2>
+
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.EmployeeName)
+    @Html.TextBoxFor(x => x.EmployeeName, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.EmployeeSurname)
+    @Html.TextBoxFor(x => x.EmployeeSurname, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.EmployeeImage)
+    @Html.TextBoxFor(x => x.EmployeeImage, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Departman)
+    @*@Html.TextBoxFor(x => x.CategoryId, new { @class = "form-control" })*@
+    @Html.DropDownListFor(x => x.DepartmanID, (List<SelectListItem>)ViewBag.emply, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-primary">Save</button>
+</form>
+
+

@@ -1,0 +1,60 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model List<Invoice>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<table id="tbl4" class="table table-bordered" style="margin-top:20px;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Serial no</th>
+            <th>Order no</th>
+            <th>Tax</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Recipient</th>
+            <th>Deliverer</th>
+            <th>Toplam</th>
+            <th> Delete &amp; Update  &amp; Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.InvoiceID</td>
+                <td>@item.InvoiceSerialno</td>
+                <td>@item.InvoiceOrderno</td>
+                <td>@item.InvoiceTax</td>
+                <td>@item.InvoiceDate</td>
+                <td>@item.InvoiceTime</td>
+                <td>@item.InvoiceRecipient</td>
+                <td>@item.InvoiceDeliverer</td>
+                <td>
+                    
+                    <a href="/Invoice/GetInvpice/@item.InvoiceID" class="btn btn-primary">Update</a>
+                    <a href="/Invoice/DetailsInvoice/@item.InvoiceID" class="btn btn-light" style="background-color:wheat">Details</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a class="btn btn-primary" href="/Invoice/NewDepartman">New Invoice</a>
+<link href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<!-- DataTables JS ve jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+
+
+<script>
+
+    $('#tbl4').dataTable({});
+
+</script>
+

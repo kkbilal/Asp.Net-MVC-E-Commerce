@@ -1,0 +1,76 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model List<Sale>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<table id="tbl1" class="table table-bordered" style="margin-top:20px;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product</th>
+            <th>Customer</th>
+            <th>Employee</th>
+            <th>Sale Price</th>
+            <th>Sales quantity</th>
+            <th>Sale Cost</th>
+            <th>Sale Date</th>
+            <th> Update  &amp; Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.SaleID
+                </td>
+                <td>
+                    @item.Product.ProductName
+                </td>
+                <td>
+                    @item.Customer.CustomerName @item.Customer.CustomerSurname
+                </td>
+                <td>
+                    @item.Employee.EmployeeName @item.Employee.EmployeeSurname
+                </td>
+                <td>
+                    @item.SalePrice
+                </td>
+                <td>
+                    @item.SaleNumber
+                </td>
+                <td>
+                    @item.SaleCost
+                </td>
+                <td>
+                    @item.SaleDate
+                </td>
+
+                <td>
+
+                    <a href="/Sale/GetSale/@item.SaleID" class="btn btn-primary">Update</a>
+                    <a href="/Sale/DetailsSale/@item.SaleID" class="btn btn-light" style="background-color:wheat">Details</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a class="btn btn-primary" href="/Sale/NewSale">New Sale</a>
+<link href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<!-- DataTables JS ve jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+
+
+<script>
+
+    $('#tbl1').dataTable({});
+
+</script>
+
+

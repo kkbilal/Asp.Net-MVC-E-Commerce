@@ -1,0 +1,52 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model List<Employee>
+@{
+    ViewBag.Title = "DetailsDepartman";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<br />
+<h2>Departman Details Page</h2>
+<br />
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active" style="color:black">Department Name: @ViewBag.dpt1</li>
+</ol>
+
+<table id="tbl8" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Surname</th>
+            <th>Employee Image</th>
+            <th>Sales</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EmployeeID</td>
+                <td>@item.EmployeeName</td>
+                <td>@item.EmployeeSurname</td>
+                <td>@item.EmployeeImage</td>
+                <td><a href="/Departman/DepEmployeeSales/@item.EmployeeID" class="btn btn-default" style="background-color:wheat">Sales</a></td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+<link href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<!-- DataTables JS ve jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+
+
+<script>
+
+    $('#tbl8').dataTable({});
+
+</script>

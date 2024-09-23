@@ -1,0 +1,63 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model List<Employee>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<table id="tbl3" class="table table-bordered" style="margin-top:20px;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Employee Name</th>
+            <th>Employee SurName</th>
+            <th>Employee Image</th>
+            <th>Employee's Department</th>
+            <th> Update  &amp; Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.EmployeeID
+                </td>
+                <td>
+                    @item.EmployeeName
+                </td>
+                <td>
+                    @item.EmployeeSurname
+                </td>
+                <td>
+                    <img src="@item.EmployeeImage" style="width:50px;height:50px;"/>
+                </td>
+                <td>
+                    @item.Departman.DepartmanName
+                </td>
+
+                <td>
+
+                    <a href="/Employee/GetEmployee/@item.EmployeeID" class="btn btn-primary">Update</a>
+                    <a href="/Departman/DepEmployeeSales/@item.EmployeeID" class="btn btn-light" style="background-color:wheat">Details</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+<a class="btn btn-primary" href="/Employee/NewEmployee">New Employee</a>
+<link href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<!-- DataTables JS ve jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+
+
+<script>
+
+    $('#tbl3').dataTable({});
+
+</script>

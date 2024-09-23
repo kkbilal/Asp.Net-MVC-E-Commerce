@@ -1,0 +1,37 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model IEnumerable<TicariOtomasyon.Models.Siniflar.ClassGroup2>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Department Employees Table</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body p-0">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th style="width: 10px"></th>
+                    <th>Department</th>
+                    <th>Progress</th>
+                    <th style="width: 40px">Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td></td>
+                    <td>@item.Departman</td>
+                    <td>
+                        <div class="progress progress-xs">
+                            @{ int a = item.Count * 20;}
+                            <div class="progress-bar bg-cyan" style="width: @a% "></div>
+                        </div>
+                    </td>
+                    <td><span class="badge bg-indigo">@item.Count</span></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>

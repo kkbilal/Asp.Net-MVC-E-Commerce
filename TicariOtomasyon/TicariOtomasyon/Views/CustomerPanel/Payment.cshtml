@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<div class="container">
+    <h2>Ödeme Sayfası</h2>
+    <h3>Toplam Tutar: @ViewBag.TotalPrice $</h3>
+
+    <form action="/CustomerPanel/Payment" method="post">
+        <div class="form-group">
+            <label for="cardNumber">Kart Numarası</label>
+            <input type="text" class="form-control" id="cardNumber" name="CardNumber" placeholder="Kart Numarası" required />
+        </div>
+        <div class="form-group">
+            <label for="cardName">Kart Üzerindeki İsim</label>
+            <input type="text" class="form-control" id="cardName" name="CardName" placeholder="Kart Üzerindeki İsim" required />
+        </div>
+        <div class="form-group">
+            <label for="expiryDate">Son Kullanma Tarihi</label>
+            <input type="text" class="form-control" id="expiryDate" name="ExpiryDate" placeholder="MM/YY" required />
+        </div>
+        <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" class="form-control" id="cvv" name="CVV" placeholder="CVV" required />
+        </div>
+        <button type="submit" class="btn btn-success">Ödemeyi Tamamla</button>
+    </form>
+</div>

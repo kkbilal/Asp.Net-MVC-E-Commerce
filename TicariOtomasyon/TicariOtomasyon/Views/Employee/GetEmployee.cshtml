@@ -1,0 +1,32 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Employee
+@{
+    ViewBag.Title = "GetEmployee";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<br />
+<h2>Employee Update Page</h2>
+
+<br />
+@using (Html.BeginForm("UpdateEmployee", "Employee", FormMethod.Post))
+{
+    <form class="form-group" method="post">
+        <div class="form-group">
+            @Html.LabelFor(x => x.EmployeeName)
+            @Html.TextBoxFor(x => x.EmployeeName, new { @class = "form-control" })
+            @Html.HiddenFor(x => x.EmployeeID)
+            @Html.LabelFor(x => x.EmployeeSurname)
+            @Html.TextBoxFor(x => x.EmployeeSurname, new { @class = "form-control" })
+            @Html.LabelFor(x => x.EmployeeImage)
+            @Html.TextBoxFor(x => x.EmployeeImage, new { @class = "form-control" })
+            @Html.LabelFor(x => x.Departman)
+            @*@Html.TextBoxFor(x => x.CategoryId, new { @class = "form-control" })*@
+            @Html.DropDownListFor(x => x.DepartmanID, (List<SelectListItem>)ViewBag.emply, new { @class = "form-control" })
+
+        </div>
+        <br />
+        <button class="btn btn-primary">Update</button>
+    </form>
+
+}
+

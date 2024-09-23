@@ -1,0 +1,22 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Category
+@{
+    ViewBag.Title = "GetCategory";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<br />
+<h2>Category Update Page</h2>
+
+<br />
+@using (Html.BeginForm("UpdateCategory","Category",FormMethod.Post)) { 
+<form class="form-group" method="post">
+   <div class="form-group">
+       @Html.LabelFor(x => x.CategoryName)
+       @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+       @Html.HiddenFor(x=>x.CategoryID)
+   </div>
+    <br />
+    <button class="btn btn-primary">Update</button>
+</form>
+
+}

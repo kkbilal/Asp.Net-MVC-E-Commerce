@@ -1,0 +1,30 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Customer
+@{
+    ViewBag.Title = "GetCustomer";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<br />
+<h2>Customer Update Page</h2>
+
+<br />
+@using (Html.BeginForm("UpdateCustomer", "Customer", FormMethod.Post))
+{
+    <form class="form-group" method="post">
+        <div class="form-group">
+            @Html.LabelFor(x => x.CustomerName)
+            @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })
+            @Html.HiddenFor(x => x.CustomerID)
+            @Html.LabelFor(x => x.CustomerSurname)
+            @Html.TextBoxFor(x => x.CustomerSurname, new { @class = "form-control" })
+            @Html.LabelFor(x => x.CustomerMail)
+            @Html.TextBoxFor(x => x.CustomerMail, new { @class = "form-control" })
+            @Html.LabelFor(x => x.CustomerCity)
+            @Html.TextBoxFor(x => x.CustomerCity, new { @class = "form-control" })
+        </div>
+        <br />
+        <button class="btn btn-outline-primary" style="background-color:antiquewhite">Update</button>
+    </form>
+
+}
+

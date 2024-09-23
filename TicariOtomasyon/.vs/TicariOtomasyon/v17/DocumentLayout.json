@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|c:\\users\\bilal\\desktop\\.net\\ticariotomasyon\\ticariotomasyon\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|solutionrelative:ticariotomasyon\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|c:\\users\\bilal\\desktop\\.net\\ticariotomasyon\\ticariotomasyon\\controllers\\customerpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|solutionrelative:ticariotomasyon\\controllers\\customerpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|c:\\users\\bilal\\desktop\\.net\\ticariotomasyon\\ticariotomasyon\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|solutionrelative:ticariotomasyon\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\ticariotomasyon\\views\\customerpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|solutionrelative:ticariotomasyon\\views\\customerpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\ticariotomasyon\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|solutionrelative:ticariotomasyon\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\ticariotomasyon\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93D80439-44EF-48E0-8B31-E0161CAFBBD2}|TicariOtomasyon\\TicariOtomasyon.csproj|solutionrelative:ticariotomasyon\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 329,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "TicariOtomasyon\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "TicariOtomasyon\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAmwC0AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T19:29:41.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerPanelController.cs",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Controllers\\CustomerPanelController.cs",
+              "RelativeDocumentMoniker": "TicariOtomasyon\\Controllers\\CustomerPanelController.cs",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Controllers\\CustomerPanelController.cs",
+              "RelativeToolTip": "TicariOtomasyon\\Controllers\\CustomerPanelController.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T19:29:34.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "TicariOtomasyon\\Views\\Shared\\AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeToolTip": "TicariOtomasyon\\Views\\Shared\\AdminLayout.cshtml",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAEIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:43:02.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\CustomerPanel\\Index.cshtml",
+              "RelativeDocumentMoniker": "TicariOtomasyon\\Views\\CustomerPanel\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\CustomerPanel\\Index.cshtml",
+              "RelativeToolTip": "TicariOtomasyon\\Views\\CustomerPanel\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:39:08.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "TicariOtomasyon\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "TicariOtomasyon\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:35:48.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "TicariOtomasyon\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bilal\\Desktop\\.net\\TicariOtomasyon\\TicariOtomasyon\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "TicariOtomasyon\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T06:35:41.565Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

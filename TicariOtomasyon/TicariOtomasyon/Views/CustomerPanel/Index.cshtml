@@ -1,0 +1,29 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Customer
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<br />
+<h2>Customer Info</h2>
+@using (Html.BeginForm("Index2", "CustomerPanel", FormMethod.Post))
+{
+    <table class="table table-bordered">
+        <tr>
+            <td><label>Mail: @HttpContext.Current.User.Identity.Name</label></td>
+        </tr>
+        <tr>
+            <td>@Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })</td>
+        </tr>
+        <tr>
+            <td>@Html.TextBoxFor(x => x.CustomerSurname, new { @class = "form-control" })</td>
+        </tr>
+        <tr>
+            <td>@Html.TextBoxFor(x => x.CustomerCity, new { @class = "form-control" })</td>
+        </tr>
+        <tr>
+            <td>@Html.TextBoxFor(x => x.CustomerSifre, new { @class = "form-control" })</td>
+        </tr>
+    </table>
+    <button class="btn btn-primary">Update Info</button>
+}
