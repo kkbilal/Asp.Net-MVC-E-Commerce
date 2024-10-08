@@ -4,7 +4,8 @@ E-Commerce Automation with admin panel,customer panel and login screen.
 <h1>Admin Panel</h1>
 <li>You can update,delete and add new item for each tables from database.</li>
 
-![admin](https://github.com/user-attachments/assets/ff09f72b-9d5e-4a34-adc0-9635b8c1e0f4)
+![admin](https://github.com/user-attachments/assets/07fadd1e-e810-4c44-95fd-58f14adbd8db)
+
 
 <h1>Customer Panel</h1>
 <li>Returns the information of the user logged in.</li>
